@@ -2,7 +2,7 @@
 % Date: 2024.Oct.02
 
 % Given the V information and the matrix size, plot the convergence trend of V
-function plotVLeft(V, n)
+function plotV(V, n)
     figure;
     hold on;
     
