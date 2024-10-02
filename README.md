@@ -4,12 +4,16 @@ This repository contains some MATLAB code, aiming to calculate the Bethe Approxi
 ## Content
 Ensure all files are in the same directory.
 
+
 To see the convergence of message on the full edge of factor graphs, run **PermBConvergence.m**.
+
 To see the relationship between PermB and Perm, run **PermBdivPerm.m**.
 
 **computeNormalPermanent.m** and **computeBethePermanent.m** are the functions. The calculation logic can be refered.
 
 ## Copyright
 Free to use.
+
 Author: WU Binghong
+
 Date: 2024.Oct.02
