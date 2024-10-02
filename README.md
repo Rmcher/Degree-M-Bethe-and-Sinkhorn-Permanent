@@ -3,4 +3,4 @@ This repository contains some MATLAB code, aiming to calculate the Bethe Approxi
 
 ## Content
 Ensure all files are in the same directory.
-Run #PermBConvergence.
+Run **PermBConvergence.m**.
