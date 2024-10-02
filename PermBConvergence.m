@@ -11,7 +11,7 @@ perm = computeNormalPermanent(A);
 [permB, V] = computeBethePermanent(A, n);
 
 % Plot the VLeft values over time for each element
-plotVLeft(V, n);
+plotV(V, n);
 
 % Print the outcome
 fprintf('Perm(A) = %.2f\n', perm);
