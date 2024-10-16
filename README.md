@@ -1,15 +1,17 @@
-# Bethe-Approximation-of-Permanent-with-Factor-Graphs
-This repository contains some MATLAB code, aiming to calculate the Bethe Approximation Permanent and explore the relationship between that and normal Permanent calculated in recursion.
+# Degree \mathcal{M} Bethe Approximation and Sinkhorn Approximation of Permanent
+This repository contains some MATLAB code, aiming to calculate the Bethe Approximation, Sinkhorn Approximation and their corresponding Degree \mathcal{M} Permanent. Figures in #results explore the relationship between different types of Permanent approximation.
 
 ## Content
-Ensure all files are in the same directory. **computeNormalPermanent.m** and **computeBethePermanent.m** are the functions. The calculation logic can be refered.
+Ensure all files are in the same directory. 
 
-To see the convergence of message on the full edge of factor graphs, run **PermBConvergence.m**.
-To see the relationship between PermB and Perm, run **PermBdivPerm.m**.
+#SPA_V_Convergence contains **PermBConvergence.m**. You can run it to see the convergence of message on the full edge of factor graphs.
+
+#Perm_Calculation contains **perm_calculation.m**. You can run it to see the relationship between different types of approximation perm.
+
+All the calculation logic and function are clearly stated.
 
 ## Copyright
 Free to use.
 
 Author: WU Binghong
-
 Date: 2024.Oct.02
