@@ -1,4 +1,4 @@
-# Degree M Bethe Approximation and Sinkhorn Approximation of Permanent
+# Degree-M Bethe and Sinkhorn Permanent
 This repository contains some MATLAB code, aiming to calculate the Bethe Approximation, Sinkhorn Approximation and their corresponding Degree M Permanent. Figures in #results explore the relationship between different types of Permanent approximation.
 
 ## Content
