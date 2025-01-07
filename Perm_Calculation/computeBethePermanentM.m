@@ -22,7 +22,7 @@ function permBM = computeBethePermanentM(A, n, M)
     % Initialize vector to store permB of expanded matrices
     permBValues = zeros(numExpandedMatrices, 1);
 
-    n_expaned = n * M;
+    n_expanded = n * M;
 
     % Calculate permB for each matrix
     for idx = 1:numExpandedMatrices
@@ -30,7 +30,7 @@ function permBM = computeBethePermanentM(A, n, M)
         A_expanded = expandedMatrices{idx};
 
         % Compute permB in standard way
-        permB = perm(A_expanded, n_expaned);
+        permB = perm(A_expanded, n_expanded);
 
         % Store permB
         permBValues(idx) = permB;
