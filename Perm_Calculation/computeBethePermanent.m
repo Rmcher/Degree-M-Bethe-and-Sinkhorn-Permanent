@@ -30,7 +30,8 @@ function [permB, V]  = computeBethePermanent(A, n)
     % i.e. x, ensuring sum=1. For u_{ij}(x_ij) = 1, MessageCell{i, j}(2)
     for i = 1:n
         for j = 1:n
-            r = rand(); 
+            % r = rand(); 
+            r = 1/3; 
             vector = [r; 1 - r]; 
             MessageCellRight{i, j} = vector;
             VRight{1,1}(i, j) = r/(1-r);
@@ -42,7 +43,7 @@ function [permB, V]  = computeBethePermanent(A, n)
     
     % Iteration setup
     t = 0;  % Initial time step
-    tolerance = 1e-2;  % Stopping condition tolerance for VLeft comparison
+    tolerance = 1e-4;  % Stopping condition tolerance for VLeft comparison
 
     while true
         t = t + 1;
@@ -148,7 +149,7 @@ function [permB, V]  = computeBethePermanent(A, n)
         if t > 2 && mod(t, 2) == 1  % Only check VLeft in odd iterations
             diff = max(max(abs(VLeft{(t + 1) / 2} - VLeft{(t - 1) / 2})));  % Difference between VLeft at t and t-2
             if diff < tolerance || t > 300000
-                disp(['Iteration converged at t = ', num2str(t)]);
+                % disp(['Iteration converged at t = ', num2str(t)]);
                 break;  % Stop if the change is smaller than tolerance
             end
         end
@@ -181,7 +182,7 @@ function [permB, V]  = computeBethePermanent(A, n)
             term = sqrt(A(i,j)) * MessageCellRight{i,j}(2);
             product_i_prime = 1;
             for i_prime = 1:n
-                if i_prime ~= i
+                if i_prime ~= i && A(i_prime, j) ~= 0
                     product_i_prime = product_i_prime * MessageCellRight{i_prime,j}(1);
                 end
             end
